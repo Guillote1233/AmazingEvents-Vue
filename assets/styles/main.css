@@ -125,6 +125,7 @@ textarea{
     border-style: solid;
     border-width: 1px;
     padding: 10px 5px;
+    text-align: center;
 }
 .titleData{
     font-weight: bold;
@@ -142,9 +143,9 @@ textarea{
 }
 .imgContainer{
     display: flex;
-    max-height: 30vh;
-    max-width: fit-content;
-    object-fit: contain;
+    min-height: 30vh;
+    min-width: 30vw;
+    object-fit: cover;
     border: 2px solid black;
     margin:20px 20px;
 }
