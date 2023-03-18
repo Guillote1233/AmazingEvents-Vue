@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    min-height: 15vh;
+}
+.navbar-brand>img{
+    height: 3vh;
+}
+.nav-item{
+    background-color: coral;
+    border-radius: 12px;
+}
+.nav-link{
+    color: white !important;
+    text-align: center;
+}
+.pageSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 10vh;
+    align-items: center;
+    background-color: coral;
+    color: white;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+main{
+    min-height: 75vh;
+}
+.searchFilter{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 15px;
+}
+.searchFilter>fieldset{
+    border: none;
+    display: flex;
+    gap: 1em;
+}
+.searchFilter>fieldset>label>input{
+    margin-left: 0.3em;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.card-img-top{
+    height: 20vh;
+    object-fit: cover;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+}
+.btn{
+    background-color: coral !important;
+    border-color: coral !important;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding-top: 10px;
+}
+.contactForm>fieldset>*{
+    display: block;
+    width: 20em;
+}
+textarea{
+    resize: none;
+}
+.submitContact{
+    background-color: coral;
+    border-color: coral;
+    width: 80px;
+    border-radius: 20%;
+}
+.statsMain{
+    display: flex;
+    justify-content: center;
+}
+.statsTable{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px;
+}
+.headTitle{
+    font-size: 24px;
+    font-weight: normal;
+    background-color: coral;
+}
+.statsTable thead{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 5px;
+}
+.statsTable td{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 5px;
+}
+.titleData{
+    font-weight: bold;
+}
+.detailsMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailContainer{
+    display: flex;
+    height: 50vh;
+    width: fit-content;
+    border: 2px solid black;
+}
+.imgContainer{
+    display: flex;
+    max-height: 30vh;
+    max-width: fit-content;
+    object-fit: contain;
+    border: 2px solid black;
+    margin:20px 20px;
+}
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 2px solid black;
+    margin: 20px 20px;
+}
+.descriptionContainer p{
+    padding:10px;
+}
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+    color: white;
+}
+.socialMedia a img{
+    width: 2vw;
+}
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.25em;
+    color: coral;
+}
+
+@media screen and (max-width: 768px) {
+    .searchFilter{
+        display: flex;
+        gap: 1em;
+        font-size: small;
+        flex-wrap: wrap;
+    }
+    .cardContainer{
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+    .card{
+        min-width: 10vw;
+        min-height: 20vh;
+        font-size: x-small;
+    }
+    .detailContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .imgContainer{
+        height: 40vh;
+        width: 60vw;
+        border: 2px solid black;
+        margin:20px 20px;
+    }
+    .descriptionContainer{
+        max-width: 60vw;
+        max-height: fit-content;
+        border: 2px solid black;
+        margin: 20px 20px;
+    }
+    .socialMedia a img{
+        width: 5vw;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .cardContainer{
+        display: block;
+    }
+    .detailContainer{
+        display: block;
+        height: fit-content;
+    }
+    .imgContainer > img{
+        height: 30vh;
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .searchFilter{
+        display: flex;
+        gap: 1em;
+        font-size: smaller;
+        flex-wrap: wrap;
+    }
+    .cardContainer{
+        display: block;
+        margin: 1rem;    
+        font-size: xx-small;
+    }
+    .card{
+        display: flex;
+        max-height: max-content;
+        max-width: 100%;
+    }
+    footer h5{
+        font-size: medium;
+    }
+    .socialMedia a img{
+        width: 10vw;
+    }
+}
