@@ -137,17 +137,21 @@ textarea{
 }
 .detailContainer{
     display: flex;
-    height: 50vh;
+    height: fit-content;
     width: fit-content;
     border: 2px solid black;
 }
 .imgContainer{
     display: flex;
-    min-height: 30vh;
-    min-width: 30vw;
     object-fit: cover;
     border: 2px solid black;
     margin:20px 20px;
+}
+.imgContainer > img{
+    display: flex;
+    object-fit: cover;
+    height: 30vh;
+    width: 30vw;
 }
 .descriptionContainer{
     display: flex;
